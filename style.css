@@ -1,29 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 
-h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 60px;
-  color: orangered;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+
+body {
+  margin:  0;
+  font-family: Montserrat;
 }
 
-/* @media screen and (max-width: 800px) {
-    h1 {
-        color: royalblue;
-    }
-} */
-
-@media screen and (max-width: 500px) {
-  h1 {
-    color: yellow;
-  }
+button {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0.3em 0.5em;
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background: #fff;
+    border:none;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    color: #7795f8;
+    outline: none;
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {
-  h1 {
-    color: orangered;
-  }
-}
 
 /* BREAKPOINTS */
 /* Extra small devices (phones, 600px, and below) */
