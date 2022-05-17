@@ -24,11 +24,60 @@ button {
 }
 
 header {
-background-image: url("https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80");
+  background-image: url("https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80");
   height: 100vh;
   background-size: cover;
   background-position: bottom right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+h1 {
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+main {
+    background-color: #f6f9fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards {
+    background-color: #fff;
+    max-width: 1200px;
+    display: flex;
+    border-radius: 2em;
+    margin-top: 2em;
+}
+
+#cards img {
+    width: 80px;
+}
+
+#cards section {
+    padding: 4em;
+
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        height: 50vh;
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        font-size: .6em;
+    }
+}
+
+
 
 /* BREAKPOINTS */
 /* Extra small devices (phones, 600px, and below) */
