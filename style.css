@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    color: orangered;
+}
+
+/* @media screen and (max-width: 800px) {
+    h1 {
+        color: royalblue;
+    }
+} */
+
+@media screen and (max-width: 500px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    h1 {
+        color: orangered;
+    }
+}
+
+
+
+/* TIPS */
+/* Extra small devices (phones, 600px, and below) */
+
+/* Small devices (potraits tablets and large phones, 600px and above */
+
+/* Medium devices (landscape tablets, 768px and above) */
+
+/* Large devices (laptops/desktops, 992px and above) */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
