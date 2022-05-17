@@ -7,7 +7,7 @@ body {
 
 button {
   display: inline-block;
-  line-height: 40px;
+  line-height: 30px;
   padding: 0.3em 0.5em;
   -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
     0 1px 3px rgba(0, 0, 0, 0.08);
@@ -35,49 +35,124 @@ header {
 }
 
 h1 {
-    font-size: 3em;
-    font-weight: 900;
-    margin-bottom: 0;
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 0;
 }
 
 main {
-    background-color: #f6f9fc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #f6f9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2 {
+    color: #6773e5;
+    font-size: 2em;
+    font-weight: 300;
 }
 
 #cards {
-    background-color: #fff;
-    max-width: 1200px;
-    display: flex;
-    border-radius: 2em;
-    margin-top: 2em;
+  background-color: #fff;
+  max-width: 1200px;
+  display: flex;
+  border-radius: 2em;
+  margin-top: 2em;
 }
 
 #cards img {
-    width: 80px;
+  width: 80px;
 }
 
 #cards section {
-    padding: 4em;
+  padding: 4em;
+}
 
+#cards h3 {
+  color: #24b47e;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#cards p {
+  line-height: 1.8em;
+  color: #525f2f;
+}
+
+#cards a {
+  color: #6772e5;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#cards section:nth-of-type(2) {
+  border-left: 4px solid #f6f9fc;
+}
+
+footer {
+  margin: 20px;
+}
+
+footer h3 {
+  display: contents;
+  color: #6772e5;
+}
+
+footer a {
+  color: #525f2f;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 700px) {
-    header {
-        height: 50vh;
-        font-size: .8em;
+  header {
+    height: 50vh;
+    font-size: 0.7em;
+  }
+  main h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+    footer h3 {
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 500px) {
-    header {
-        font-size: .6em;
-    }
+@media screen and (max-width: 400px) {
+  header {
+    font-size: 0.6em;
+  }
+    #cards section:nth-of-type(2) {
+    border-top: 8px solid #f6f9fc;
+  }
+  footer h3 {
+    font-size: 14px;
+  }
+  footer a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 360px) {
+  header {
+    font-size: 0.6em;
+  }
 }
 
-
+@media screen and (max-width: 900px) {
+  main h2 {
+    font-size: 16px;
+    margin-top: 1.4em;
+  }
+  #cards {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  #cards section:nth-of-type(2) {
+    border-top: 8px solid #f6f9fc;
+  }
+}
 
 /* BREAKPOINTS */
 /* Extra small devices (phones, 600px, and below) */
