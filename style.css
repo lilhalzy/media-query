@@ -48,9 +48,10 @@ main {
 }
 
 main h2 {
-    color: #6773e5;
-    font-size: 2em;
-    font-weight: 300;
+  color: #6773e5;
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 #cards {
@@ -58,7 +59,6 @@ main h2 {
   max-width: 1200px;
   display: flex;
   border-radius: 2em;
-  margin-top: 2em;
 }
 
 #cards img {
@@ -104,55 +104,58 @@ footer a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 700px) {
-  header {
+@media screen and (min-width: 500px) and (max-width: 700px){
+  header{
     height: 50vh;
-    font-size: 0.7em;
+    font-size:0.8em;
   }
   main h2 {
-    font-size: 20px;
+    font-size: 1.5em;
+    color: #24b47e;
+  }
+  #cards section {
+    padding:  3em;
   }
 }
 
-@media screen and (max-width: 460px) {
-    footer h3 {
-        font-size: 14px;
+
+@media screen and (max-width: 500px){
+  header{
+    font-size:0.5em;
+  }
+  main h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+    section {
+        padding-right: 4em;
     }
 }
 
-@media screen and (max-width: 400px) {
-  header {
-    font-size: 0.6em;
+@media screen and (max-width: 700px){
+  #cards {
+    flex-direction:column;
   }
-    #cards section:nth-of-type(2) {
-    border-top: 8px solid #f6f9fc;
+  #cards section:nth-of-type(2){
+    border-left: none;
+    border-top: 3px solid #f6f9fc;
+  }
+  main h2 {
+      font-size: 1em;
+  }
+  #cards p {
+      line-height: 1.4em;
   }
   footer h3 {
-    font-size: 14px;
+      font-size: smaller;
   }
   footer a {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 360px) {
-  header {
-    font-size: 0.6em;
+      font-size: small;
   }
 }
 
-@media screen and (max-width: 900px) {
-  main h2 {
-    font-size: 16px;
-    margin-top: 1.4em;
-  }
-  #cards {
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  #cards section:nth-of-type(2) {
-    border-top: 8px solid #f6f9fc;
-  }
-}
 
 /* BREAKPOINTS */
 /* Extra small devices (phones, 600px, and below) */
